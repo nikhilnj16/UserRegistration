@@ -18,8 +18,14 @@ public class ValidateUserDetails {
     }
 
     public boolean isValidEmail(String email){
-        Pattern pattern = Pattern.compile("^[a-z0-9+_.-]+@[a-z0-9+._-]+\\.[a-z]{2,4}$");
+        Pattern pattern = Pattern.compile("^[a-z0-9+._-]+@[a-z0-9+._-]+\\.[a-z]{2,4}$");
         Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
+
+    public boolean isValidPhoneNum(String phoneNum){
+        Pattern pattern = Pattern.compile("^[+]{1}\\d{2} \\d{10}$");
+        Matcher matcher = pattern.matcher(phoneNum);
         return matcher.matches();
     }
 }

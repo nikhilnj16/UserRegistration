@@ -34,5 +34,13 @@ public class userRegistration {
             x = validate.isValidEmail(email);
         } while (!x);
         System.out.println("Valid email ID: " + email);
+
+        String phoneNum;
+        do {
+            System.out.println("Enter your phone number (include +91 before phone number) : ");
+            phoneNum = scanner.nextLine();
+            x = validate.isValidPhoneNum(phoneNum);
+        } while (!x);
+        System.out.println("Valid phone number: " + phoneNum);
     }
 }
