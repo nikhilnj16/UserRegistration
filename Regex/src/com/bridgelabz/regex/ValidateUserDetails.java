@@ -28,4 +28,9 @@ public class ValidateUserDetails {
         Matcher matcher = pattern.matcher(phoneNum);
         return matcher.matches();
     }
+    public boolean isValidPassword(String password){
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_!@#$%^&*]{8,}$");
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
 }

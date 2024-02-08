@@ -42,5 +42,13 @@ public class userRegistration {
             x = validate.isValidPhoneNum(phoneNum);
         } while (!x);
         System.out.println("Valid phone number: " + phoneNum);
+
+        String password;
+        do {
+            System.out.println("Enter your password (Min 8 characters required) : ");
+            password = scanner.nextLine();
+            x = validate.isValidPassword(password);
+        } while (!x);
+        System.out.println("Valid password: " + password);
     }
 }
