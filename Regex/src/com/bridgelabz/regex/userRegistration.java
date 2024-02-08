@@ -26,5 +26,13 @@ public class userRegistration {
             x = validate.isValidLastName(lastName);
         } while (!x);
         System.out.println("Valid last name: " + lastName);
+
+        String email;
+        do {
+            System.out.println("Enter your email (EX: nikhil@gmail.com) : ");
+            email = scanner.nextLine();
+            x = validate.isValidEmail(email);
+        } while (!x);
+        System.out.println("Valid email ID: " + email);
     }
 }

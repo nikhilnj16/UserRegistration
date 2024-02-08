@@ -16,4 +16,10 @@ public class ValidateUserDetails {
         Matcher matcher = pattern.matcher(lastName);
         return matcher.matches();
     }
+
+    public boolean isValidEmail(String email){
+        Pattern pattern = Pattern.compile("^[a-z0-9+_.-]+@[a-z0-9+._-]+\\.[a-z]{2,4}$");
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
 }
