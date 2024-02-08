@@ -32,8 +32,12 @@ public class ValidateUserDetails {
         if (password.length() < 8){
             return false;
         }
-        Pattern pattern = Pattern.compile(".*[A-Z].*");
-        Matcher matcher = pattern.matcher(password);
-        return matcher.matches();
+        if (!password.matches(".*[A-Z].*")){
+            return false;
+        }
+        if (!password.matches(".*\\d.*")){
+            return false;
+        }
+        return true;
     }
 }
