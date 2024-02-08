@@ -29,7 +29,10 @@ public class ValidateUserDetails {
         return matcher.matches();
     }
     public boolean isValidPassword(String password){
-        Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_!@#$%^&*]{8,}$");
+        if (password.length() < 8){
+            return false;
+        }
+        Pattern pattern = Pattern.compile(".*[A-Z].*");
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
