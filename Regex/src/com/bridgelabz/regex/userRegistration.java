@@ -45,7 +45,7 @@ public class userRegistration {
 
         String password;
         do {
-            System.out.println("Enter your password (Min 8 characters required) : ");
+            System.out.println("Enter your password (Min 8 characters required + Atleast one Uppercase and one number and exactly one special character) : ");
             password = scanner.nextLine();
             x = validate.isValidPassword(password);
         } while (!x);

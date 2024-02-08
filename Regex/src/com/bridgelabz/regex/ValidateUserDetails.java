@@ -38,6 +38,9 @@ public class ValidateUserDetails {
         if (!password.matches(".*\\d.*")){
             return false;
         }
+        if(!password.matches(".*[^a-zA-Z0-9].*")){
+            return false;
+        }
         return true;
     }
 }
