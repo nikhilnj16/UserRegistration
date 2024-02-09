@@ -2,8 +2,8 @@ package com.bridgelabz.regex;
 
 import java.util.Scanner;
 
-public class userRegistration {
-    public static void main(String[] args) {
+public class UserRegistration {
+    public static void main(String[] args) throws InvalidDetailsEntryException{
         Scanner scanner = new Scanner(System.in);
         String firstName;
         boolean x;
