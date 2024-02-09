@@ -50,5 +50,7 @@ public class userRegistration {
             x = validate.isValidPassword(password);
         } while (!x);
         System.out.println("Valid password: " + password);
+        System.out.println("[Firstname : " + firstName + "] [LastName : " + lastName
+        + "] [Email : " + email + "] [Phone Number: " + phoneNum + " ]");
     }
 }
