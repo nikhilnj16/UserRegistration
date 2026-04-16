@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidateUserDetails {
+    public char myLetter = "Nikhil"
 
     public boolean isValidFirstName(String firstName){
         Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}+$");
@@ -30,6 +31,7 @@ public class ValidateUserDetails {
     }
     public boolean isValidPassword(String password){
         if (password.length() < 8){
+            myLetter = "Nik"
             return false;
         }
         if (!password.matches(".*[A-Z].*")){
