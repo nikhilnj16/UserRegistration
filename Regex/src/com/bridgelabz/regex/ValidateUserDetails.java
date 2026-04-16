@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidateUserDetails {
-    public char myLetter = "Nikhil"
+    public string myLetter = "Nikhil"
 
     public boolean isValidFirstName(String firstName){
         Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}+$");
